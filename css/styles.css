@@ -1,0 +1,93 @@
+
+body{
+  background-color: rgb(244, 244, 244);
+}
+
+
+.all-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.tabless{
+    border: 1px solid black;
+    width: 800px;
+}
+td{
+    border: 1px solid black;
+}
+table{
+    border-spacing: 0px;
+    border-collapse: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #355062;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .refreshbutton button{
+    position: absolute;
+    top: 0;
+    right: 0;
+   background-color: aqua;
+   margin-right: 300px;
+   margin-top: 50px;
+   width: 200px;
+   cursor: pointer;
+}
+.table th{
+    cursor: pointer;
+}
+.table th:hover{
+opacity: .7;
+}
+.table{
+    width: 500px;
+}
+.main{
+width: 517px;
+}

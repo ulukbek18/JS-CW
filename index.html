@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS CW</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="dropdown">
+        <!-- <button onclick="dropDown()" class="dropbtn">Dropdown</button> -->
+        <select id="yearsDropdown" oninput="filterTable()">
+            <option>All</option>
+            <option>Comedy</option>
+            <option>Family,Comedy</option>
+            <option>Adventure,Action</option>
+            <option>Adventure,Comedy</option>
+            <option>Drama,Comedy</option>
+            <option>Short,Action</option>
+          </select>
+      </div>
+
+   <div class="all-content">
+        <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+    </div>
+    <div class="main">
+        <table class="table">
+            <tr class="tr">
+                <th onclick="sortTable(0)">Title </th>
+                <th onclick="sortTable(1)">Year </th>
+                <th onclick="sortTable(2)">Genre </th>
+                <th onclick="sortTable(3)">Image </th>
+            </tr>
+        </table>
+        <table class="users" id="users"></table>
+    </div>
+    <div id="preloader">
+    <style type="text/css">#hellopreloader>p{display:none;}#hellopreloader_preload{display: block;position: fixed;z-index: 99999;top: 0;left: 0;width: 100%;height: 100%;min-width: 1000px;background: #2574A9 url(http://hello-site.ru//main/images/preloads/ball-triangle.svg) center center no-repeat;background-size:41px;}</style>
+    <div id="hellopreloader"><div id="hellopreloader_preload"></div><p><a href="http://hello-site.ru">Hello-Site.ru. Бесплатный конструктор сайтов.</a></p></div>
+    <script type="text/javascript">var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},800);};</script>
+    </div>
+    <div class="refreshbutton">
+        <button onClick="window.location.reload();">Refresh Page</button>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
